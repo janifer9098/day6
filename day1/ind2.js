@@ -45,5 +45,7 @@ Console.log("after read")
 
 
 Console.log("after write")
+
+
 writefile("./exp.txt","written through sync fun()")
 Console.log("after write")
