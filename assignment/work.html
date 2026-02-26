@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link herf=C:\Users\sarik\OneDrive\Desktop\fsd6\assignment\home.html><link>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #1e293b;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 10%;
+            gap: 50px;
+        }
+
+        .container img {
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .description {
+            max-width: 500px;
+        }
+
+        .description h1 {
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1e293b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #334155;
+        }
+
+        pre {
+            margin-top: 20px;
+            background-color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MyLogo</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Work</a>
+    </nav>
+</header>
+
+<section class="container">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Nature Landscape">
+
+    <div class="description">
+        <h1>Beautiful Nature Landscape</h1>
+        <p>
+          
+        </p>
+
+        <button onclick="printObject()">Show JSON Object</button>
+
+        <pre id="output"></pre>
+    </div>
+</section>
+
+<script>
+    function printObject() {
+        const data = {
+            id: 1,
+            title: "Nature Landscape",
+            category: "Environment",
+            location: "Mountain Area",
+            description: "A peaceful natural view with mountains and open sky"
+        };
+
+        document.getElementById("output").textContent = JSON.stringify(data, null, 4);
+    }
+</script>
+
+</body>
+</html>

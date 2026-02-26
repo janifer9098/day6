@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #1e293b;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 10%;
+            gap: 50px;
+        }
+
+        .container img {
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .description {
+            max-width: 500px;
+        }
+
+        .description h1 {
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MyLogo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Work</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Nature Landscape">
+        <div class="description">
+            <h1>Beautiful Nature Landscape</h1>
+            <p>
+                This image captures the peaceful beauty of nature with mountains, open sky, and greenery. 
+                It represents calmness, growth, and balance. The natural light and scenic view create a 
+                refreshing and inspiring atmosphere.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
